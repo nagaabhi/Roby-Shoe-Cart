@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Nunito", sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* background-color: rgb(235, 230, 225); */
+  overflow: hidden;
+  z-index: 1;
+
+  backdrop-filter: blur(30px);
+  box-shadow: 1px 1px 10px 1px rgba(232, 226, 226, 0.501);
+}
+body {
+  background-color: whitesmoke;
+  font-family: "Nunito", sans-serif;
+}
+.navbar-right a {
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.navbar-right a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+  transition: all 0.5s ease-in-out;
+  color: chocolate;
+  border-radius: 200px;
+}
+.navbar-left h1 {
+  cursor: pointer;
+}
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.home-banner {
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  place-content: center;
+  place-items: center;
+
+  margin-top: 30px;
+  font-family: "Nunito", sans-serif;
+}
+.home-banner-right img {
+  width: 100%;
+  mix-blend-mode: darken;
+
+  padding: 20px;
+}
+.home-banner-left h1 {
+  font-size: 35px;
+  font-weight: 900;
+}
+.home-banner-left p {
+  font-weight: 700;
+  font-size: 13px;
+}
+.home-banner-left button {
+  border: none;
+  height: 40px;
+  margin-top: 20px;
+  width: 35%;
+  background-color: rgb(40, 38, 38);
+  color: whitesmoke;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.line {
+  height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 7%;
+  background-color: black;
+  border-radius: 100px;
+  margin-bottom: 0;
+}
+.featured {
+  text-align: center;
+}
+.featured p {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 2.5px;
+  margin-top: 5px;
+}
+.products-container-one img {
+  width: 100%;
+}
+.products-container {
+  text-align: center;
+  background-color: rgba(230, 224, 224, 0.548);
+  padding: 2%;
+  border-radius: 5px;
+  position: relative;
+}
+.women-products-container,
+.products-container-one {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 290px));
+  place-content: center;
+  place-items: center;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.sale {
+  position: absolute;
+  top: 6%;
+  color: rgb(0, 0, 0);
+  background-color: antiquewhite;
+  padding: 5px;
+  left: 3%;
+
+  width: 10%;
+  border-radius: 5px;
+  rotate: 270deg;
+  font-weight: 600;
+}
+.price {
+  font-weight: 800;
+}
+.products-container button {
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: rgba(230, 224, 224, 0.192);
+  cursor: pointer;
+}
+.women div {
+  margin-top: 30px;
+}
+.products-container img {
+  width: 100%;
+}
+.scroll {
+  text-align: right;
+  cursor: pointer;
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  z-index: 1001;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 12px 16px;
+  font-size: 18px;
+  visibility: hidden;
+}
+.new-collections-heading {
+  text-align: center;
+}
+.new-collections-heading div {
+  margin-top: 35px;
+}
+.new-collections-heading h1 {
+  margin-top: 7px;
+}
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+  place-content: center;
+  place-items: center;
+
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.new-collection-product img {
+  width: 100%;
+  border-radius: 10px;
+}
+.new-collection-product {
+  border: 1px rgb(236, 230, 230) solid;
+  mix-blend-mode: darken;
+  /* background-color: rgb(197, 201, 205); */
+  /* padding: 10px; */
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.add-to-cart-container {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  background-color: lightgray;
+}
+.add-to-cart-container button {
+  border: none;
+  height: 40px;
+  width: 200%;
+  border-radius: 6px;
+  background-color: black;
+  color: antiquewhite;
+  cursor: pointer;
+}
+.one {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 100%;
+  margin-top: 200px;
+}
+.shoe-card {
+  /* width: 250px; */
+  padding: 4px;
+  /* border-radius: 12px; */
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #dededebd;
+}
+
+.shoe-card img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 8px; */
+}
+
+.shoe-info {
+  margin-top: 12px;
+}
+
+.shoe-info h2 {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.price {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.add-to-cart {
+  background: none;
+  color: #111;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: none;
+  outline: none;
+  transition: color 0.2s;
+}
+
+.add-to-cart:hover {
+  color: #ff5a00;
+}
+
+.arrow {
+  font-size: 16px;
+}
+.all-products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
+  place-content: center;
+  place-items: center;
+  row-gap: 30px;
+  column-gap: 60px;
+}
+.all-prodcust h1 {
+  text-align: center;
+  margin-top: 0;
+}
+.all-prodcust div {
+  margin-top: 40px;
+}
+.cart-quantity{
+  color: brown;
+  font-size: 20px;
+  text-decoration: underline;
+
+}
+.cart{
+  border-left: 3px rgb(5, 5, 5) solid;
+}
+@media (min-width: 2000px) and (max-width: 3000px) {
+  .home-banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .products-container-one,
+  .women-products-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 2000px) {
+  .home-banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+  .home-banner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-content: center;
+    place-items: center;
+    margin-left: 50px;
+  }
+  .home-banner-right img {
+    width: 80%;
+  }
+  .home-banner-left button {
+    width: 80%;
+    transition: all 0.5s ease-in-out;
+  }
+  .home-banner-left {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 100px) and (max-width: 499px) {
+  .home-banner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-content: center;
+    place-items: center;
+    margin-left: 50px;
+  }
+  .home-banner-right img {
+    width: 130%;
+  }
+  .home-banner-left button {
+    width: 80%;
+    transition: all 0.5s ease-in-out;
+  }
+  .home-banner-left {
+    margin-left: 100px;
+  }
+}

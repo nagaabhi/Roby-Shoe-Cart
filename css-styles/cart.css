@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+.heading{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: rgba(222, 235, 247, 0.824); */
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  backdrop-filter: blur(30px);
+  height: 50px;
+}
+.left-cart-container img {
+  width: 70%;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.left-cart-container {
+  display: grid;
+  /* grid-template-columns: repeat(2, 300px); */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  place-content: center;
+  place-items: center;
+  /* border: 1px rgb(233, 227, 227) solid; */
+  padding: 20px;
+  margin-top: 10px;
+  box-shadow: 1px 1px 10px 1px rgb(238, 237, 237);
+  border-radius: 5px;
+}
+.sub-right h1 {
+  font-size: 22px;
+}
+.sub-right p {
+  font-size: 13px;
+}
+.sub-right select {
+  border: none;
+  padding: 10px;
+  background-color: rgba(237, 237, 237, 0.746);
+  width: 49%;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: rgba(255, 228, 196, 0.259);
+}
+.sub-right button {
+  border: none;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  background-color: darkgrey;
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 1px rgba(169, 169, 169, 0.54);
+}
+.cart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  place-content: center;
+  place-items: center;
+}
+.sub-total,
+.shipping-handling,
+.estimated-tax {
+  display: grid;
+  grid-template-columns: repeat(2, 230px);
+  place-content: center;
+  place-items: center;
+}
+.summary-container p {
+  width: 40%;
+  text-align: right;
+  color: maroon;
+  font-weight: 700;
+}
+.summary-container strong {
+  text-align: left;
+}
+.all-total {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  place-items: center;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+.summary-container {
+  position: fixed;
+  top: 100px;
+  z-index: 1001;
+  right: 60px;
+}
+.cart-empty-image {
+  width: 12%;
+  height: auto;
+}
+.show-cart-empty-message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  justify-content: center;
+  margin-left: 100px;
+  margin-top: 100px;
+  background-color: antiquewhite;
+
+  width: 35%;
+  border-radius: 100px;
+  height: 56px;
+  
+
+}
+@media (min-width: 1500px) and (max-width: 2000px) {
+  .cart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .cart {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .summary-container {
+    position: sticky;
+    top: 0;
+  }
+  .show-cart-empty-message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 400px) and (max-width: 999px) {
+  .cart {
+    display: grid;
+    grid-template-columns: repeat(1, 400px);
+    place-content: center;
+    place-items: center;
+  }
+  .left-cart-container img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 3px;
+  }
+  .summary-container strong {
+    text-align: right;
+  }
+  .summary-container h1 {
+    margin-left: 30px;
+  }
+  .summary-container {
+    position: sticky;
+    top: 0;
+  }
+  .show-cart-empty-message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+    
+  }
+}
+@media (min-width: 100px) and (max-width: 399px) {
+  .cart {
+    display: grid;
+    grid-template-columns: repeat(1, 400px);
+  }
+  .left-cart-container img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 3px;
+  }
+  .summary-container strong {
+    text-align: right;
+  }
+  .summary-container h1 {
+    margin-left: 30px;
+  }
+  .summary-container {
+    position: sticky;
+    top: 0;
+  }
+  .show-cart-empty-message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}

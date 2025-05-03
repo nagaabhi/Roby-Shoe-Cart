@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart-Section</title>
+    <link rel="stylesheet" href="./css-styles/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-...your_integrity_hash..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="heading">
+      <div class="heading-left">
+        <a href="./index.html"
+          ><i class="fas fa-arrow-alt-circle-left" style="font-size: 36px"></i
+        ></a>
+      </div>
+      <div class="heading-right">
+        <h1>Bag</h1>
+      </div>
+    </div>
+    <div class="cart">
+      <div class="cart-container js-cart-container"></div>
+
+      <div class="summary-container">
+        <h1>Summary</h1>
+        <div class="sub-total">
+          <strong>Subtotal: </strong>
+          <p class="js-display-sub-total">$00.00</p>
+        </div>
+        <div class="shipping-handling">
+          <strong>Estimated Shipping & Handling: </strong>
+          <p class="js-shipping">$00.00</p>
+        </div>
+        <div class="estimated-tax">
+          <strong>Estimated Tax: </strong>
+          <p class="js-tax">-</p>
+        </div>
+        <div class="total">
+          <div class="line"></div>
+          <div class="all-total">
+            <strong>total: </strong>
+            <p class="js-display-total">$00.00</p>
+          </div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="show-cart-empty-message js-show-emoty-message">
+      <h1>Your Cart is Empty</h1>
+      <img
+        class="cart-empty-image"
+        src="./images/cart-empty-image.png"
+        alt=""
+      />
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./scripts/checkout.js"></script>
+  </body>
+</html>
