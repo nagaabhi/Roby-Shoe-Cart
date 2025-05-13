@@ -3,7 +3,7 @@ export const nikeShoes = [
     id: 0,
     name: "Nike Air Max 270",
     price: 150.99,
-    image: "/Roby-Shoe/images/nike-shoe-2.png",
+    image: "./Roby-Shoe/images/nike-shoe-2.png",
     description:
       "Classic style meets everyday comfort. Known for its durable leather and timeless design. A streetwear staple since 1982.",
     shipping: 120,
@@ -13,7 +13,7 @@ export const nikeShoes = [
     id: 1,
     name: "Nike Air Force 1 '07",
     price: 110.99,
-    image: "/Roby-Shoe/images/nike-shoe-3.png",
+    image: "./Roby-Shoe/images/nike-shoe-3.png",
     description:
       "Features a massive Air unit for ultimate cushioning. Sleek, modern look with breathable mesh upper. Ideal for all-day wear and sporty vibes.",
     shipping: 150,
@@ -23,7 +23,7 @@ export const nikeShoes = [
     id: 2,
     name: "Nike Dunk Low Retro",
     price: 115.99,
-    image: "/Roby-Shoe/images/nike-shoe-4.png",
+    image: "./Roby-Shoe/images/nike-shoe-4.png",
     description:
       "Built for speed and elite performance. Lightweight upper with responsive ZoomX foam. Perfect for marathon runners and racers.",
     shipping: 180,
@@ -33,7 +33,7 @@ export const nikeShoes = [
     id: 3,
     name: "Nike Air Dunk New",
     price: "345.99",
-    image: "/Roby-Shoe/images/nike-shoe-1.png",
+    image: "./Roby-Shoe/images/nike-shoe-1.png",
     description:
       "Retro design with a skateboarding legacy. Leather overlays and padded tongue for support. Loved in both sport and fashion circles.",
     shipping: 140,
@@ -44,7 +44,7 @@ export const nikeShoes = [
 export const womenNikeShoes = [
   {
     id: 4,
-    image: "/Roby-Shoe/images/women-img1.png",
+    image: "./Roby-Shoe/images/women-img1.png",
     name: "Nike Air Max 270",
     price: "$150",
     description:
@@ -52,7 +52,7 @@ export const womenNikeShoes = [
   },
   {
     id: 5,
-    image: "/Roby-Shoe/images/women-img.png",
+    image: "./Roby-Shoe/images/women-img.png",
     name: "Nike Air Force 1 Shadow",
     price: "$130",
     description:
@@ -62,7 +62,7 @@ export const womenNikeShoes = [
   },
   {
     id: 6,
-    image: "/Roby-Shoe/images/women=img4.png",
+    image: "./Roby-Shoe/images/women=img4.png",
     name: "Nike Pegasus 40",
     price: "$140",
     description:
@@ -72,7 +72,7 @@ export const womenNikeShoes = [
   },
   {
     id: 7,
-    image: "/Roby-Shoe/images/women-img3.png",
+    image: "./Roby-Shoe/images/women-img3.png",
     name: "Nike Invincible 3",
     price: "$180",
     description:
