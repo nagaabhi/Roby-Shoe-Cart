@@ -84,7 +84,7 @@ export const womenNikeShoes = [
 export const nikeShoeCollections = [
   {
     id: 8,
-    image: "/Roby-Shoe/images/new-img.png",
+    image: "./images/images/new-img.png",
     name: "Nike Air Max 2025",
     description:
       "The next-generation Air Max with premium cushioning and futuristic design.",
@@ -94,7 +94,7 @@ export const nikeShoeCollections = [
   },
   {
     id: 9,
-    image: "/Roby-Shoe/images/new-img1.png",
+    image: "./images/images/new-img1.png",
     name: "Nike React Vision",
     description:
       "A bold and comfortable sneaker built for all-day wear and eye-catching style.",
