@@ -84,7 +84,7 @@ export const womenNikeShoes = [
 export const nikeShoeCollections = [
   {
     id: 8,
-    image: "./images/images/new-img.png",
+    image: "./images/new-img.png",
     name: "Nike Air Max 2025",
     description:
       "The next-generation Air Max with premium cushioning and futuristic design.",
@@ -94,7 +94,7 @@ export const nikeShoeCollections = [
   },
   {
     id: 9,
-    image: "./images/images/new-img1.png",
+    image: "./images/new-img1.png",
     name: "Nike React Vision",
     description:
       "A bold and comfortable sneaker built for all-day wear and eye-catching style.",
@@ -159,7 +159,7 @@ export const allProducts = [
     id: 2,
     name: "Nike Dunk Low Retro",
     price: 115.99,
-    image: "/Roby-Shoe/images/nike-shoe-4.png",
+    image: "./images/nike-shoe-4.png",
     description:
       "Built for speed and elite performance. Lightweight upper with responsive ZoomX foam. Perfect for marathon runners and racers.",
     shipping: 180,
